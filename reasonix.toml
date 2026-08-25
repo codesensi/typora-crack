@@ -1,0 +1,2 @@
+[permissions]
+allow = ["Bash=if (Test-Path .git) { \"has git\" } else { \"no git\" }", "Bash=Write-Output \"=== README 行数 ===\"; (Get-Content README.md).Count; Write-Output \"=== 文件列表 ===\"; Get-ChildItem -Force | Select-Object Name, Length"]
